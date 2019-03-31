@@ -1,9 +1,9 @@
 ## Caching the Inverse of a Matrix
 
 ## makeCacheMatrix
-## Inpout:  param_matrix   An invertable matrix
-## This fuction creates an objext that wraps a matrix with get and set functions
-## to store the inversion of a matrix using the solve function 
+## Input:  param_matrix   An invertable matrix
+## This function creates an object that wraps a matrix with get and 
+## set functions to store the inverse of a matrix using the solve function 
 
 makeCacheMatrix <- function(param_matrix = matrix()) {
 
@@ -23,9 +23,9 @@ makeCacheMatrix <- function(param_matrix = matrix()) {
 
 
 ## cacheSolve
-## Inpout:  param_cacheMatrix   A matrix object created by the makeCacheMatrix function
-## This function calculates and saves the inversion of matrices and if called with the 
-## same cache matrix object, returns the invert from cache rather than recalculating the invert
+## Input:  param_cacheMatrix   A matrix object created by the makeCacheMatrix function
+## This function calculates and saves the inverse of a matrix and if called with the 
+## same cache matrix object, returns the inverse from cache rather than recalculating
 
 cacheSolve <- function(param_cacheMatrix, ...) {
         ## Return a matrix that is the inverse of 'param_cacheMatrix'
